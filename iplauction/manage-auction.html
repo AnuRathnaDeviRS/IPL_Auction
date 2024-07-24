@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Auctions - IPL Auction</title>
+  <link rel="stylesheet" href="manage-auctions.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Manage Auctions</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Auction ID</th>
+          <th>Auction Name</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Player Auction</td>
+          <td>2024-06-01</td>
+          <td>2024-06-05</td>
+          <td>
+            <button class="edit-button" onclick="editAuction(1)">Edit</button>
+            <button class="delete-button" onclick="deleteAuction(1)">Delete</button>
+          </td>
+        </tr>
+        <!-- Add more auction rows here -->
+      </tbody>
+    </table>
+    <button>Add New Auction</button>
+    <a href="dashboard.html">Back to Dashboard</a>
+  </div>
+  <script src="manage-auctions.js"></script>
+</body>
+</html>
